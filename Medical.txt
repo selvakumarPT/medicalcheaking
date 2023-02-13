@@ -1,0 +1,305 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class patient{
+            medical(){
+                var Name=prompt("Enter the Name:"+"<br>");
+                var Age=prompt("Enter the Age:"+"<br>");
+                document.write("Enter the Name:"+ Name +"<br>");
+                document.write("Enter the Age: "+ Age +"<br>");
+             }        
+            bplevel() {
+                var bplevel = prompt("Enter the bplevel:");
+                document.write("Enter the bplevel:" + bplevel + "<br>");
+                {
+                    if (bplevel > 70 && bplevel <= 90) 
+                    {
+                        document.write("your bplevel Low" + "<br><bp>");
+                        document.write(" Tablet: Fludrocortisone." + "<br>");
+                        document.write("Food Protocal: seafoods and furites and dates" + "<br>");
+                        documet.write("Thank you");
+                    }
+                    else if (bplevel >90 && bplevel<=120)
+                    {
+                        document.write("your bplevel Normal"+"<br><br>");
+                        document.write("keep it up very good");
+
+                    }
+                    else if(bplevel >121 && bplevel <=140)
+                    {
+                        document.write("You have Hypertension."+"<br><br>");
+                        document.write("Tablet: Mellitus"+"<br>");
+                        document.write("Protocols:Furites,vegetables,meats( matton& seafoods)");
+
+                    }
+                    else if(bplevel>141 && bplevel<=160)
+                    {
+                        document.write("You have 1st stage of hyper-tension."+"<br> <br>");
+                        document.write("Tablet: Amlodipine" +"<br>");
+                        document.write("Protocols: Eating a heart healthy diet with less "+"<br>");
+                        document.write(" do wrokout regulerly ,don't drink Alcohol,"+"<br>");
+                    }
+                    else if (bplevel>160)  
+                    {
+                        document.write("You are in 2nd stage of Hyper tension"+"<br><br>");
+                        document.write("Tablet: beta-blockers "+"<br>");
+                        document.write("workout regulerly<br>Avoid Alcohol&& smokeing");
+                        document.write("Reduse amount of salt in food");
+                    }
+                    else
+                    {
+                        document.write("Invalied Data"+"<br>");
+                        document.write("cheak the bp value");
+                        documunt.write("Thank you");
+                    }
+
+
+
+                    
+
+
+                    
+
+
+                }
+            }
+            sugerlevelcheak() {
+                var sugerlevel = prompt("Enter the sugerlevel:" + "<br>");
+                document.write("Enter the sugerlevel:" + sugerlevel + "<br>");
+                var fasting = prompt("1.Beforefasting /n 2.Afterfasting");
+
+                switch (fasting) {
+                    case "1": {
+                        if (sugerlevel >= 70 && sugerlevel <= 90) {
+                            document.write("Your sugerlevel is normal" + "<br>");
+                            document.write("weldone");
+                        }
+                        else if (sugerlevel >=91 && sugerlevel <= 120) {
+                            document.write("you have pre-Diabetes" + "<br>");
+                            document.write("Tablet: Metaformin" + "<br>");
+                            document.write("foods:fresh vegetable and less carbhohydrate meat(seafood,matton)"+"<br>");
+                        }
+                        else if (sugerlevel >= 126) {
+                            document.write("You have Diabetes" + "<br>");
+                            document.write("Tablet: glimepiride");
+                            document.write("Food: Leafy greens, leafy vegetables are low in calories." + "<br>");
+                        
+
+                        }
+                        else {
+                            document.write("Invalied Data");
+
+                        }
+                    }
+                    break;
+                    case "2":
+                        {
+                            if(sugerlevel<=140)
+                            {
+                                document.write("your sugerlevel is normal"+"<br>");
+                                document.write("weldone");
+
+                            }
+                            else if(sugerlevel>=140 && sugerlevel<=180)
+                            {
+                                document.write("you have pre-Diabetes"+"<br>");
+                                document.write("Tablet: Metaformin"+"<br>");
+                                document.write("Food:beans and legumes /n Soybean products, such as tofu and tempeh");
+                            }
+                            else if(sugerlevel>=181)
+                            {
+                                document.write("you have Diabetes"+"<br>");
+                                document.write("Tablet: glimepiride. "+"<br>");
+                                document.write("Food: Leafy greens, leafy vegetables are low in calories");
+
+                            }
+                            else{
+                                document.write("invalied Data ")
+                            }
+                        }
+                        break;
+                        default:
+                            {
+                                document.write("Go and consult doctor");
+                            }
+                
+                    
+                    
+
+
+
+
+                }
+            }
+            saltlevelcheak() {
+                var saltlevel = prompt("Enter the saltlevel:" + "<br>");
+                document.write("Enter the saltlevel:" + saltlevel + "<br>");
+                if (saltlevel >=185) {
+                    document.write("You have Hyponatremia.(You have Dangerously Low Sodium) " + "<br>");
+                    document.write("Tablet: Tolvaptan" + "<br>");
+                    document.write("Food:Snack on salty nut, salty rice cakes or other low-fat slty snacks to raise your blood sodium levels" + "<br>");
+
+                }
+                else if(saltlevel >=135 && saltlevel <=145)
+                {
+                    document.write("Your Sodium leves is Normal. Keep it up");
+                }
+                else if(saltlevel >=145)
+                {
+                    document.write("You have Hypernatremia(You have high sodium level in your blood. " + "<br>");
+                    document.write("Tablet: Chlorpropamide and clofibrate " + "<br>");
+                    document.write("Foods:fresh vegetables and furites " + "<br>");
+                }
+                else {
+                      document.write("Invalied data");
+                }
+
+            }
+            choleterollevelcheak(){
+                var choleterollevel= prompt("Enter the choleterollevel:"+"<br>");
+                document.write("Enter the choleterollevel:"+choleterollevel+"<br>");
+                if(choleterollevel<=200)
+                {
+                    document.write("you have Heart-Healthy. Keep it up"+"<br");
+                }
+                else if(choleterollevel>=201 && choleterollevel<=240)
+                {
+                    document.write("Under Danger "+"<br>");
+                    document.write("Tablet:Statins (including atorvastatin, simvastatin, and rosuvastatin"+"<br>");
+                    document.write("eat fresh fruits and vegetables to avoid dangerous cholestrol.");
+                }
+                else if(choleterollevel>=241)
+                {
+                    document.write("ou have Dangerous level of Cholestrol"+"<br>");
+                    document.write("Tablet:Borderline cholestero"+"<br>");
+                    document.write("You should eat plenty of vegetables, fruit and wholegrains");
+                }
+                else
+                {
+                    document.write("Invalied data");
+                    document.write("Consult a doctor");
+                }
+            }
+            hblevelcheak(){
+                var hblevel= parseFloat(prompt("Enter the hblevel:"+"<br>"));
+                document.write("Enter the hblevel:"+hblevel+"<br>");
+                var Gender=prompt("1.Male 2.Female");
+                
+                switch(Gender)
+                {
+                    case "1":
+                    {
+                        if(hblevel>=13 && hblevel<=16)
+                        {
+                            document.write("your hb level normal"+"<br>");
+                            document.write("Keep the hb level");
+                            
+                        }
+                        else if(hblevel<=13.2)
+                        {
+                            document.write("your hb level low"+"<br>");
+                            document.write("Medicine: Foltrate "+"<br>");
+                            document.write("Food: Take Furites and dates"+"<br>");
+                        }
+                        else if(hblevel>=16.1)
+                        {
+                            document.write("your hb level is High"+"<br>");
+                            document.write("Medicine: Hydroxyruea (Droxia, Hydrea)"+"<br>");
+                            document.write("Foods:Take Meat(matton & seafoods)");
+                        }
+                        else 
+                        {
+                            document.write("Invalied Data");
+                        }
+                    }
+                    break;
+                    case "2":
+                        
+                            if(hblevel>=12 && hblevel<=16)
+                            {
+                                document.write("your hb level normal"+"<br>");
+                                document.write("keep it up");
+
+                            }
+                            else if(hblevel<=11.6)
+                            {
+                                document.write("youn hb is low"+"<br>");
+                                document.write("Medicine: Foltrate "+"<br>");
+                                document.write("food:furites and dates ");
+                            }
+                            else if(hblevel>=15)
+                            {
+                                document.write("your hb is high");
+                                document.write("Medicine: Hydroxyruea (Droxia, Hydrea)");
+                                document.write("Food:meat(matton&seafoods)")
+                            }
+                            break;
+                            default:
+                                {
+                                    document.write("Invalied")
+                                }
+
+                        
+
+                }
+                
+                 
+                
+            }
+        }
+        class Bmilevel extends patient{
+            Bmilevelcheak()
+            {
+                const weight = prompt("Enter your Weight: ");
+                document.write("Your Weight is: "+weight+"<br><br>");
+                const height = prompt("Enter your Height: ");
+                document.write("Your Height is: "+height+"<br><br>");
+                const bmi = weight / (height * height);
+                document.write("Your BMI (Body Mass Index) is: "+ bmi+"<br><br>"); 
+                if(bmi<18.5)
+                {
+                    document.write("your are under wight");
+                    document.write("take some wightgain foods");
+
+                }
+                else if (bmi>=18.5 && bmi <= 24.9)
+                {
+                    document.write("your wight is normal keep it");
+                }
+                else if(bmi >= 25 && bmi <= 29.9)
+                {
+                    document.write("your wight is over");
+                    document.write("Reduces the wight");
+                }
+                else 
+                {
+                    document.write("invalied data");
+                }
+
+
+                
+
+
+            }
+        }    
+        const obj=new Bmilevel();
+        obj.medical();
+        obj.bplevel();
+        obj.sugerlevelcheak();
+        obj.saltlevelcheak();
+        obj.choleterollevelcheak();
+        obj.hblevelcheak();
+        obj.Bmilevelcheak();
+        
+    </script>
+    
+    
+</body>
+</html>
